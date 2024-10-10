@@ -1,6 +1,6 @@
 # Semantic Segmentation Model for Autonomous Vehicles - An End-to-End ML Workflow
 
-![Project Result]()
+![Project Result](https://github.com/amramer/Semantic-Segmentation-Model-for-Autonomous-Vehicles-An-End-to-End-ML-Workflow/blob/main/final_segmentation.gif)
 
 This project focuses on instance segmentation using the BDD100K dataset, a large-scale, diverse dataset for autonomous driving. The objective is to segment and identify various objects in street scenes, including:
 
