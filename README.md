@@ -15,7 +15,7 @@ This project focuses on instance segmentation using the BDD100K dataset, a large
 ## Want to know more?
 
 <a href="https://api.wandb.ai/links/amribrahim-amer-2024/5xdtb8eg">
-    <img src="https://raw.githubusercontent.com/wandb/wandb/cfd24ce2111a1acd67fcceae65ad15bfe0750c79/assets/logo-dark.svg" alt="Weights & Biases" width="200" height="50">
+    <img src="https://raw.githubusercontent.com/wandb/wandb/cfd24ce2111a1acd67fcceae65ad15bfe0750c79/assets/logo-dark.svg" alt="Weights & Biases" width="100" height="40">
 </a> If you want to know more about the project, read the report [here](https://api.wandb.ai/links/amribrahim-amer-2024/5xdtb8eg) or check the report file in the project repository.
 
 ## Key Features
