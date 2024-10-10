@@ -19,7 +19,7 @@ If you'd like to learn more about the project and the results, feel free to read
 - [Read the report on Weights & Biases](https://api.wandb.ai/links/amribrahim-amer-2024/5xdtb8eg)
 - Alternatively, check the report file included in this repository.
 
-[![Weights & Biases](https://wandb.ai/favicon.ico)](https://wandb.ai/)**Weights & Biases**: For tracking and visualizing all experiments and results.
+[![Weights & Biases](https://raw.githubusercontent.com/wandb/wandb/cfd24ce2111a1acd67fcceae65ad15bfe0750c79/assets/logo-dark.svg)](https://wandb.ai/)**Weights & Biases**: For tracking and visualizing all experiments and results.
 
 ## Key Features
 
