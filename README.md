@@ -76,6 +76,34 @@ You can also run the project locally by following these steps:
     ```bash
       python train.py --help
     ```
+    ### Output of `train.py --help:`
+
+    ```bash
+    usage: train.py [-h] [--img_size IMG_SIZE] [--batch_size BATCH_SIZE]
+                    [--epochs EPOCHS] [--lr LR] [--arch ARCH]
+                    [--augment AUGMENT] [--seed SEED]
+                    [--log_preds LOG_PREDS] [--pretrained PRETRAINED]
+                    [--mixed_precision MIXED_PRECISION]
+    
+    Process hyper-parameters for training the segmentation model.
+    
+    optional arguments:
+      -h, --help            show this help message and exit
+      --img_size IMG_SIZE   image size (default: 512)
+      --batch_size BATCH_SIZE
+                            batch size (default: 16)
+      --epochs EPOCHS       number of training epochs (default: 20)
+      --lr LR               learning rate (default: 0.001)
+      --arch ARCH           timm backbone architecture (default: resnet34)
+      --augment AUGMENT     Use image augmentation (default: True)
+      --seed SEED           random seed (default: 42)
+      --log_preds LOG_PREDS log model predictions (default: True)
+      --pretrained PRETRAINED
+                            Use pretrained model (default: True)
+      --mixed_precision MIXED_PRECISION
+                            use fp16 for mixed precision (default: True)
+    ```
+
 
       **Examples:**
         
