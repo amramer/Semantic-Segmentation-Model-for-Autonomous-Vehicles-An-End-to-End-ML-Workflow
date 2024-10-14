@@ -56,4 +56,11 @@ You can also run the project locally by following these steps:
    git clone https://github.com/amramer/Semantic-Segmentation-for-Autonomous-Vehicles.git
    cd Semantic-Segmentation-for-Autonomous-Vehicles
 
+2. **Create and activate the Conda enviroment**:
+   Make sure you have Conda installed, then run:
 
+  ```bash
+  conda env create -f conda-environment.yaml
+  conda activate segmentation-env
+
+3. 
