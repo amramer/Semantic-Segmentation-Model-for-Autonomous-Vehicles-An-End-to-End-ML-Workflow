@@ -59,8 +59,27 @@ You can also run the project locally by following these steps:
 2. **Create and activate the Conda enviroment**:
    Make sure you have Conda installed, then run:
 
-  ```bash
-  conda env create -f conda-environment.yaml
-  conda activate segmentation-env
+   ```bash
+   conda env create -f conda-environment.yaml
+   conda activate segmentation-env
 
-3. 
+3. **Run the training script:**
+   Use the default hyperparameters by running the training script:
+
+   ```bash
+   python train.py
+
+  To customize hyperparameters, you can use optional arguments. Run the following command to see all available options:
+  
+  ```bash
+  python train.py --help
+
+
+
+
+
+
+  
+  
+   
+
