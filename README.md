@@ -38,6 +38,11 @@ If you'd like to learn more about the project and the results, feel free to read
 
 ## Getting Started
 
+### Prerequisites
+
+- Make sure you have Python 3.8 or higher installed.
+- Install Conda if you haven't already: [Download Conda](https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html)
+
 ### Running the Colab Notebook
 
 To get started with the project, you can use the Colab notebook provided in the repository:
@@ -45,6 +50,10 @@ To get started with the project, you can use the Colab notebook provided in the 
 - **Run the notebook**: [Segmentation_Model_Autonomous_Vehicle.ipynb](Segmentation_Model_Autonomous_Vehicle.ipynb)
   
 The notebook installs the project dependencies from the `requirements.txt`, starts a new W&B run, downloads and preprocesses the dataset, trains the model, and evaluates it.
+
+### Dataset Preparation
+
+To use the BDD100K dataset, you can download it from the [official BDD100K website](https://www.vis.xyz/bdd100k/).
 
 ### Running Locally
 
