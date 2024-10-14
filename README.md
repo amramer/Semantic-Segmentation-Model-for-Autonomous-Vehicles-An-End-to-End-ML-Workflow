@@ -66,20 +66,22 @@ You can also run the project locally by following these steps:
 3. **Run the training script:**
    Use the default hyperparameters by running the training script:
 
-     ```bash
-     python train.py
+        ```bash
+        python train.py
 
-  To customize hyperparameters, you can use optional arguments. Run the following command to see all available options: ```bash
-  python train.py --help```
+    To customize hyperparameters, you can use optional arguments. Run the following command to see all available options:
+
+       ```bash
+        python train.py --help
+    
+    **Examples:**
+    
+    - Train with a custom image size and batch size:
   
-  **Examples:**
+      ```bash
+      python train.py --img_size 640 --batch_size 6
   
-  - Train with a custom image size and batch size:
-
-    ```bash
-    python train.py --img_size 640 --batch_size 6
-
-  - Change the number of epochs and learning rate:
-
-    ```bash
-    python train.py --epochs 50 --lr 0.0001
+    - Change the number of epochs and learning rate:
+  
+      ```bash
+      python train.py --epochs 50 --lr 0.0001
