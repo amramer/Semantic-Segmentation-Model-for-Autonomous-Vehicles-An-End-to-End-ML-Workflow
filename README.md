@@ -73,13 +73,3 @@ You can also run the project locally by following these steps:
   
    ```bash
    python train.py --help
-
-
-
-
-
-
-  
-  
-   
-
