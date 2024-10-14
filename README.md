@@ -69,7 +69,7 @@ You can also run the project locally by following these steps:
    ```bash
    python train.py
 
-  To customize hyperparameters, you can use optional arguments. Run the following command to see all available options:
+  - To customize hyperparameters, you can use optional arguments. Run the following command to see all available options:
   
    ```bash
    python train.py --help
