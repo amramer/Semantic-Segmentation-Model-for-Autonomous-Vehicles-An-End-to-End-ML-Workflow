@@ -64,10 +64,9 @@ You can also run the project locally by following these steps:
    conda activate segmentation-env
 
 3. **Run the training script:**
-   Use the default hyperparameters by running the training script:
+   Use the default hyperparameters by running the training script: ```bash python train.py
 
-        ```bash
-        python train.py
+        
 
     To customize hyperparameters, you can use optional arguments. Run the following command to see all available options:
 
