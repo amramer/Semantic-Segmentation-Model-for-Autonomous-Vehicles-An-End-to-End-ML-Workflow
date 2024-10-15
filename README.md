@@ -200,7 +200,7 @@ You can also run the project locally by following these steps:
          at the same time.
   
          * Below is the parallel coordinate plot from the W&B sweep. Each line represents a different run with varying hyperparameter combinations for 
-         architecture, batch size, and learning rate, with the resulting mIoU displayed on the right.
+           architecture, batch size, and learning rate, with the resulting mIoU displayed on the right.
 
          <img src="https://github.com/amramer/Semantic-Segmentation-Model-for-Autonomous-Vehicles-An-End-to-End-ML-Workflow/blob/main/media/sweep-runs.png" 
            alt="PNG" width="1460" height="550">
