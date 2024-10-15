@@ -136,16 +136,16 @@ You can also run the project locally by following these steps:
 
    ### Steps for Hyperparameter Optimization
 
-    1. **Define Sweep Configuration**:
+   1. **Define Sweep Configuration**:
    
-     The sweep configuration is defined in the [`sweep.yaml`](sweep.yaml) file. This file contains the settings for the sweep, such as the search method and       hyperparameter space.
+   The sweep configuration is defined in the [`sweep.yaml`](sweep.yaml) file. This file contains the settings for the sweep, such as the search method and       hyperparameter space.
 
-     Key components of the configuration:
+   Key components of the configuration:
      - **program**: Specifies the script to run (e.g., `train.py`).
      - **method**: We use `random` search to explore different configurations.
      - **parameters**: Defines the hyperparameters to tune, such as learning rate, batch size, and model architecture.
   
-     Example of `sweep.yaml`:
+   Example of `sweep.yaml`:
      
      ```yaml
      program: train.py
