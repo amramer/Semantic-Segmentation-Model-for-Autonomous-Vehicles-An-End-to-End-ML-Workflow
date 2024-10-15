@@ -126,41 +126,43 @@ You can also run the project locally by following these steps:
           ```bash
           python train.py --epochs 50 --lr 0.0001
 
-  ## Hyperparameter Optimization
+   ## Hyperparameter Optimization
 
-  To get the best performance out of the model, we can fine-tune or optimize the set of hyperparameters (such as batch size, learning rate, etc.). Instead of 
-  manually setting custom values for these parameters, **W&B Sweeps** allow us to automate the hyperparameter tuning process, efficiently exploring a range 
-  of values to find the optimal configuration for our model.
+   To get the best performance out of the model, we can fine-tune or optimize the set of hyperparameters (such as batch size, learning rate, etc.). Instead 
+   of manually setting custom values for these parameters, **W&B Sweeps** allow us to automate the hyperparameter tuning process, efficiently exploring a 
+   range of values to find the optimal configuration for our model.
     
-  You can refer to the [Weights & Biases Sweep Documentation](https://docs.wandb.ai/guides/sweeps) for more details.
+   You can refer to the [Weights & Biases Sweep Documentation](https://docs.wandb.ai/guides/sweeps) for more details.
 
-  ### Steps for Hyperparameter Optimization
+   ### Steps for Hyperparameter Optimization
 
-   1. **Define Sweep Configuration**:
+    1. **Define Sweep Configuration**:
    
-   The sweep configuration is defined in the [`sweep.yaml`](sweep.yaml) file. This file contains the settings for the sweep, such as the search method and       hyperparameter space.
+       The sweep configuration is defined in the [`sweep.yaml`](sweep.yaml) file. This file contains the settings for the sweep, such as the search method 
+       and hyperparameter space.
 
-   Key components of the configuration:
-     - **program**: Specifies the script to run (e.g., `train.py`).
-     - **method**: We use `random` search to explore different configurations.
-     - **parameters**: Defines the hyperparameters to tune, such as learning rate, batch size, and model architecture.
-  
-   Example of `sweep.yaml`:
-     
-     ```yaml
-     program: train.py
-     method: random
-     project: Semantic-Segmentation-Model-for-Autonomous-Vehicle
-     entity: av-team
-     metric:
-       name: miou
-       goal: maximize
-     parameters:
-       lr:
-         distribution: log_uniform_values
-         min: 1e-5
-         max: 1e-2
-       batch_size:
-         values: [4, 8]
-       arch:
-         values: ['resnet18', 'convnext_tiny', 'regnet_x_400mf', 'mobilenet_v3_small']
+       Key components of the configuration:
+         - **program**: Specifies the script to run (e.g., `train.py`).
+         - **method**: We use `random` search to explore different configurations.
+         - **metric**: The goal is to maximize the mean Intersection over Union (mIoU) metric.
+         - **parameters**: Defines the hyperparameters to tune, such as learning rate, batch size, and model architecture.
+      
+       Example of `sweep.yaml`:
+         
+         ```yaml
+         program: train.py
+         method: random
+         project: Semantic-Segmentation-Model-for-Autonomous-Vehicle
+         entity: av-team
+         metric:
+           name: miou
+           goal: maximize
+         parameters:
+           lr:
+             distribution: log_uniform_values
+             min: 1e-5
+             max: 1e-2
+           batch_size:
+             values: [4, 8]
+           arch:
+             values: ['resnet18', 'convnext_tiny', 'regnet_x_400mf', 'mobilenet_v3_small']```
