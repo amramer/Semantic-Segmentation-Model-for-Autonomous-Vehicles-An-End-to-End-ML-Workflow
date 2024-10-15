@@ -190,4 +190,14 @@ You can also run the project locally by following these steps:
          ```
          Note: You can choose the number of runs by setting the `--count` flag to the desired value.
 
+         To run two W&B agents simultaneously on different GPUs with a set number of runs (--count), use the following commands:
+
+         ```bash
+         CUDA_VISIBLE_DEVICES=0 wandb agent <SWEEP_ID> --count 30 &
+         CUDA_VISIBLE_DEVICES=1 wandb agent <SWEEP_ID> --count 30 &
+         ```
+         This runs one agent on GPU 0 and another on GPU 1, each performing 30 runs. The `&` allows the commands to run in the background, so both agents run 
+         at the same time.
+
+
 
