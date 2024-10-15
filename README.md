@@ -125,3 +125,5 @@ You can also run the project locally by following these steps:
       
           ```bash
           python train.py --epochs 50 --lr 0.0001
+
+## Hyperparameter Optimization
