@@ -145,7 +145,7 @@ You can also run the project locally by following these steps:
          - **program**: Specifies the script to run (e.g., `train.py`).
          - **method**: We use `random` search to explore different configurations.
          - **metric**: The goal is to maximize the mean Intersection over Union (mIoU) metric.
-         - **parameters**: Defines the hyperparameters to tune, such as learning rate, batch size, and model architecture.
+         - **parameters**: Defines the hyperparameters to tune, such as learning rate, batch size, and [backbone model architecture](https://pytorch.org/vision/stable/models.html).
       
        Example of `sweep.yaml`:
          
