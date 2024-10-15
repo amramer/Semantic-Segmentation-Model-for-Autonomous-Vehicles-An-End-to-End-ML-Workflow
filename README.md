@@ -128,8 +128,6 @@ You can also run the project locally by following these steps:
 
   ## Hyperparameter Optimization
 
-  ## Hyperparameter Optimization
-
   To get the best performance out of the model, we can fine-tune or optimize the set of hyperparameters (such as batch size, learning rate, etc.). Instead of 
   manually setting custom values for these parameters, **W&B Sweeps** allow us to automate the hyperparameter tuning process, efficiently exploring a range 
   of values to find the optimal configuration for our model.
