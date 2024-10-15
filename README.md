@@ -198,6 +198,10 @@ You can also run the project locally by following these steps:
          ```
          This runs one agent on GPU 0 and another on GPU 1, each performing 30 runs. The `&` allows the commands to run in the background, so both agents run 
          at the same time.
+  
+         <img src="https://github.com/amramer/Semantic-Segmentation-Model-for-Autonomous-Vehicles-An-End-to-End-ML-Workflow/blob/main/media/sweep-runs.png" alt="PNG">
+
+         
 
 
 
