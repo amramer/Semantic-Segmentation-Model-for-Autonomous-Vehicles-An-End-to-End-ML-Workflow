@@ -119,7 +119,7 @@ You can also run the project locally by following these steps:
       - Train with a custom image size and batch size:
       
           ```bash
-          python train.py --img_size 640 --batch_size 6
+          python train.py --img_size 640 --batch_size 16
       
       - Change the number of epochs and learning rate:
       
