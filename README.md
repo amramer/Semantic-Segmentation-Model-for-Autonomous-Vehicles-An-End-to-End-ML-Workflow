@@ -183,5 +183,11 @@ You can also run the project locally by following these steps:
          ```bash
          wandb agent <SWEEP_ID>
          ```
+         To limit the maximum number of iterations or runs for the sweep per agent, use the following command:
+
+         ```bash
+         wandb agent <SWEEP_ID> --count 30
+         ```
+         Note: You can choose the number of runs by setting the `--count` flag to the desired value.
 
 
