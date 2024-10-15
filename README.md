@@ -134,7 +134,7 @@ You can also run the project locally by following these steps:
     
   You can refer to the [Weights & Biases Sweep Documentation](https://docs.wandb.ai/guides/sweeps) for more details.
 
-   ### Steps for Hyperparameter Optimization
+  ### Steps for Hyperparameter Optimization
 
    1. **Define Sweep Configuration**:
    
