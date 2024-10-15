@@ -166,3 +166,11 @@ You can also run the project locally by following these steps:
              values: [4, 8]
            arch:
              values: ['resnet18', 'convnext_tiny', 'regnet_x_400mf', 'mobilenet_v3_small']```
+
+      2. **Initialize the Sweep**:
+
+         Use the following command to initialize the sweep:
+
+         ```bash
+          wandb sweep sweep.yaml
+
