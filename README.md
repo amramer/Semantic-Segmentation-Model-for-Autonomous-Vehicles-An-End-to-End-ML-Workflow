@@ -169,8 +169,19 @@ You can also run the project locally by following these steps:
 
       2. **Initialize the Sweep**:
 
-         Use the following command to initialize the sweep:
+         Run the following command to create and initialize the sweep:
 
          ```bash
           wandb sweep sweep.yaml
+         ```
+         This will create a new sweep and return a unique sweep ID.
+
+      3. **Launch Agents:**:
+
+         Once the sweep is initialized, you can launch agents to start running the sweep. Each agent runs one instance of the sweep:
+
+         ```bash
+         wandb agent <SWEEP_ID>
+         ```
+
 
