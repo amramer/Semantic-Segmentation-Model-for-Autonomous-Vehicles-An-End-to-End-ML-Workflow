@@ -1,10 +1,12 @@
 # Semantic Segmentation Model for Autonomous Vehicles - An End-to-End ML Workflow
 
+
 ![Python Version](https://img.shields.io/badge/python-3.8%2B-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![WandB](https://img.shields.io/badge/Weights%20and%20Biases-Track%20Experiments-orange)
 ![PyTorch Version](https://img.shields.io/badge/pytorch->=1.9-red)
 ![Fastai Version](https://img.shields.io/badge/fastai->=2.7-green)
+
 
 <img src="https://github.com/amramer/Semantic-Segmentation-Model-for-Autonomous-Vehicles-An-End-to-End-ML-Workflow/blob/main/media/predictions.jpg" alt="JPG" width="840" height="924">
 
