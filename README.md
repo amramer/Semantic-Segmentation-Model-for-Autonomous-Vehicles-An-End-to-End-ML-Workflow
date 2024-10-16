@@ -30,8 +30,8 @@ This project focuses on instance segmentation using the BDD100K dataset, a large
   - [Running Locally](#running-locally)
 - [Hyperparameter Optimization](#hyperparameter-optimization)
 - [Evaluation and Analysis](#evaluation-and-analysis)
-- [License](#license)
 - [Future Work](#future-work)
+- [License](#license)
 - [Contact Information](#contact-information)
 
 ## Want to know more?
@@ -256,8 +256,6 @@ The following visualizations present the evaluation results, including charts, c
     <img src="https://github.com/amramer/Semantic-Segmentation-Model-for-Autonomous-Vehicles-An-End-to-End-ML-Workflow/blob/main/media/W&B_Workspace_panels.gif" alt="GIF" width="700" height="640">
 </div>
 
-## License
-This project is licensed under the MIT License. For more details, please refer to the [LICENSE](LICENSE) file included in the repository.
 
 ## Future Work
 To enhance the capabilities and performance of this project, the following improvements are planned:
@@ -267,6 +265,9 @@ To enhance the capabilities and performance of this project, the following impro
 - **Increased Dataset Diversity**: Expanding the dataset to include more varied scenes and object types, which will help improve the model generalization to real-world scenarios.
 
 We welcome contributions and ideas to help achieve these goals!
+
+## License
+This project is licensed under the MIT License. For more details, please refer to the [LICENSE](LICENSE) file included in the repository.
 
 ## Contact Information
 For inquiries, suggestions, or feedback, please feel free to reach out via email at [amribrahim.amer@gmail.com](amribrahim.amer@gmail.com). Your input is greatly appreciated, and I am eager to hear your thoughts on this project!
