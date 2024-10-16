@@ -8,7 +8,7 @@
 
 <img src="https://github.com/amramer/Semantic-Segmentation-Model-for-Autonomous-Vehicles-An-End-to-End-ML-Workflow/blob/main/media/final_segmentation.gif" alt="GIF" width="800" height="620">
 
-This project focuses on instance segmentation using the BDD100K dataset, a large-scale, diverse dataset for autonomous driving. The objective is to segment and identify various objects in street scenes, including:
+This project focuses on instance segmentation using the BDD100K dataset, a large-scale, diverse dataset for autonomous driving. The main objective is to accurately segment and identify various objects in street scenes, which is Important for improving the perception capabilities of autonomous vehicles. The following classes are included in the segmentation task:
 
 - **Road**
 - **Traffic Light**
