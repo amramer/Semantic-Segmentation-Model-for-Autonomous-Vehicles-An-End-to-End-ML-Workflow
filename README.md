@@ -126,94 +126,90 @@ You can also run the project locally by following these steps:
           ```bash
           python train.py --epochs 50 --lr 0.0001
 
-   ## Hyperparameter Optimization
+## Hyperparameter Optimization
 
-   To get the best performance out of the model, we can fine-tune or optimize the set of hyperparameters (such as batch size, learning rate, etc.). Instead 
-   of manually setting custom values for these parameters, **W&B Sweeps** allow us to automate the hyperparameter tuning process, efficiently exploring a 
-   range of values to find the optimal configuration for our model.
+ To get the best performance out of the model, we can fine-tune or optimize the set of hyperparameters (such as batch size, learning rate, etc.). Instead of manually setting custom values for these parameters, **W&B Sweeps** allow us to automate the hyperparameter tuning process, efficiently exploring a range of values to find the 
+ optimal configuration for our model.
     
-   You can refer to the [Weights & Biases Sweep Documentation](https://docs.wandb.ai/guides/sweeps) for more details.
+ You can refer to the [Weights & Biases Sweep Documentation](https://docs.wandb.ai/guides/sweeps) for more details.
 
-   ### Steps for Hyperparameter Optimization
+ ### Steps for Hyperparameter Optimization
 
-    1. **Define Sweep Configuration**:
+  1. **Define Sweep Configuration**:
    
-       The sweep configuration is defined in the [`sweep.yaml`](sweep.yaml) file. This file contains the settings for the sweep, such as the search method 
-       and hyperparameter space.
+     The sweep configuration is defined in the [`sweep.yaml`](sweep.yaml) file. This file contains the settings for the sweep, such as the search method and hyperparameter space.
 
-       Key components of the configuration:
+     Key components of the configuration:
          - **program**: Specifies the script to run (e.g., `train.py`).
          - **method**: We use `random` search to explore different configurations.
          - **metric**: The goal is to maximize the mean Intersection over Union (mIoU) metric.
          - **parameters**: Defines the hyperparameters to tune, such as learning rate, batch size, and [backbone model architecture](https://pytorch.org/vision/stable/models.html).
       
-       Example of `sweep.yaml`:
+     Example of `sweep.yaml`:
          
-         ```yaml
-         program: train.py
-         method: random
-         project: Semantic-Segmentation-Model-for-Autonomous-Vehicle
-         entity: av-team
-         metric:
-           name: miou
-           goal: maximize
-         parameters:
-           lr:
-             distribution: log_uniform_values
-             min: 1e-5
-             max: 1e-2
-           batch_size:
-             values: [4, 8]
-           arch:
-             values: ['resnet18', 'convnext_tiny', 'regnet_x_400mf', 'mobilenet_v3_small']```
+     ```yaml
+     program: train.py
+     method: random
+     project: Semantic-Segmentation-Model-for-Autonomous-Vehicle
+     entity: av-team
+     metric:
+       name: miou
+       goal: maximize
+     parameters:
+       lr:
+         distribution: log_uniform_values
+         min: 1e-5
+         max: 1e-2
+       batch_size:
+         values: [4, 8]
+       arch:
+         values: ['resnet18', 'convnext_tiny', 'regnet_x_400mf', 'mobilenet_v3_small']
 
-      2. **Initialize the Sweep**:
+ 2. **Initialize the Sweep**:
 
-         Run the following command to create and initialize the sweep:
+    Run the following command to create and initialize the sweep:
 
-         ```bash
-          wandb sweep sweep.yaml
-         ```
-         This will create a new sweep and return a unique sweep ID.
+    ```bash
+    wandb sweep sweep.yaml
+    ```
+    This will create a new sweep and return a unique sweep ID.
 
-      3. **Launch Agents:**:
+3. **Launch Agents:**:
 
-         Once the sweep is initialized, you can launch agents to start running the sweep. Each agent runs one instance of the sweep:
+   Once the sweep is initialized, you can launch agents to start running the sweep. Each agent runs one instance of the sweep:
 
-         ```bash
-         wandb agent <SWEEP_ID>
-         ```
-         To limit the maximum number of iterations or runs for the sweep per agent, use the following command:
+    ```bash
+    wandb agent <SWEEP_ID>
+    ```
+   To limit the maximum number of iterations or runs for the sweep per agent, use the following command:
 
-         ```bash
-         wandb agent <SWEEP_ID> --count 30
-         ```
-         Note: You can choose the number of runs by setting the `--count` flag to the desired value.
+   ```bash
+   wandb agent <SWEEP_ID> --count 30
+   ```
+   Note: You can choose the number of runs by setting the `--count` flag to the desired value.
 
-         To run two W&B agents simultaneously on different GPUs with a set number of runs (--count), use the following commands:
+   To run two W&B agents simultaneously on different GPUs with a set number of runs (--count), use the following commands:
 
-         ```bash
-         CUDA_VISIBLE_DEVICES=0 wandb agent <SWEEP_ID> --count 30 &
-         CUDA_VISIBLE_DEVICES=1 wandb agent <SWEEP_ID> --count 30 &
-         ```
-         This runs one agent on GPU 0 and another on GPU 1, each performing 30 runs. The `&` allows the commands to run in the background, so both agents run 
-         at the same time.
+   ```bash
+   CUDA_VISIBLE_DEVICES=0 wandb agent <SWEEP_ID> --count 30 &
+   CUDA_VISIBLE_DEVICES=1 wandb agent <SWEEP_ID> --count 30 &
+   ```
+   This runs one agent on GPU 0 and another on GPU 1, each performing 30 runs. The `&` allows the commands to run in the background, so both agents run at the same time.
   
-         * The parallel coordinate plot below, generated from the W&B sweep, visualizes different runs with varying hyperparameter combinations for architecture, batch size, and learning rate. The resulting **`mean Intersection over union (mIoU)`** for each run is shown on the right.
+   * The parallel coordinate plot below, generated from the W&B sweep, visualizes different runs with varying hyperparameter combinations for architecture, batch size, and learning rate. The resulting **`mean Intersection over union (mIoU)`** for each run is shown on the right.
 
-         <img src="https://github.com/amramer/Semantic-Segmentation-Model-for-Autonomous-Vehicles-An-End-to-End-ML-Workflow/blob/main/media/sweep-runs.png" 
-           alt="PNG" width="1430" height="545">
+     <img src="https://github.com/amramer/Semantic-Segmentation-Model-for-Autonomous-Vehicles-An-End-to-End-ML-Workflow/blob/main/media/sweep-runs.png" alt="PNG" width="1430" height="545">
 
-     4. **Final Step: Train the Model with Optimal Hyperparameters**:
+4. **Final Step: Train the Model with Optimal Hyperparameters**:
 
-        Once the W&B Sweep has identified the best-performing hyperparameters, you can manually set these parameters to train your model with them. Here's an         example command to run the model training using these optimal hyperparameters:
+   Once the W&B Sweep has identified the best-performing hyperparameters, you can manually set these parameters to train your model with them. Here's an         example command to run the model training using these optimal hyperparameters:
 
-        ```bash
-        python train.py --img_size 320 --batch_size 8 --epochs 50 --lr 0.0004 --arch resnet18 --log_preds True
-        ```
+   ```bash
+   python train.py --img_size 320 --batch_size 8 --epochs 50 --lr 0.0004 --arch resnet18 --log_preds True
+   ```
 
         
- ## Evaluation
+## Evaluation
 
  Once the model is trained with the optimized hyperparameters, it is important to evaluate its performance on the test dataset. This allows us to assess how well the model generalizes to unseen data and compare the performance across different metrics such mean Intersection over Union (mIoU), and class-specific IoU scores.
 
