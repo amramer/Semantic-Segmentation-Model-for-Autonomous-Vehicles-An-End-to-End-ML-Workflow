@@ -202,7 +202,7 @@ You can also run the project locally by following these steps:
          * The parallel coordinate plot below, generated from the W&B sweep, visualizes different runs with varying hyperparameter combinations for architecture, batch size, and learning rate. The resulting **`mean Intersection over union (mIoU)`** for each run is shown on the right.
 
          <img src="https://github.com/amramer/Semantic-Segmentation-Model-for-Autonomous-Vehicles-An-End-to-End-ML-Workflow/blob/main/media/sweep-runs.png" 
-           alt="PNG" width="1460" height="550">
+           alt="PNG" width="1430" height="545">
 
          
 
