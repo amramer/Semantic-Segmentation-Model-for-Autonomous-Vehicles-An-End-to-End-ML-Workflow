@@ -264,7 +264,7 @@ To enhance the capabilities and performance of this project, the following impro
 
 - **Additional Classes for Segmentation**: Implementing more classes to segment a wider range of objects, improving the versatility of the model.
 - **Advanced Model Architectures**: Exploring and integrating advanced architectures to boost accuracy and efficiency in segmentation tasks.
-- **Increased Dataset Diversity**: Expanding the dataset to include more varied scenes and object types, which will help improve the model’s generalization to real-world scenarios.
+- **Increased Dataset Diversity**: Expanding the dataset to include more varied scenes and object types, which will help improve the model generalization to real-world scenarios.
 
 We welcome contributions and ideas to help achieve these goals!
 
