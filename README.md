@@ -12,7 +12,7 @@
 
 <img src="https://github.com/amramer/Semantic-Segmentation-Model-for-Autonomous-Vehicles-An-End-to-End-ML-Workflow/blob/main/media/final_segmentation.gif" alt="GIF" width="800" height="620">
 
-This project focuses on instance segmentation using the BDD100K dataset, a large-scale, diverse dataset for autonomous driving. The main objective is to accurately segment and identify various objects in street scenes, which is important for improving the perception capabilities of autonomous vehicles. The following classes are included in the segmentation task:
+This project focuses on **semantic segmentation** using the BDD100K dataset, a large-scale, diverse dataset for autonomous driving. The main objective is to accurately segment and identify various objects in street scenes, which is important for improving the perception capabilities of autonomous vehicles. The following classes are included in the segmentation task:
 
 - **Road**
 - **Traffic Light**
@@ -50,14 +50,14 @@ If you'd like to learn more about the project and the results, feel free to read
 - **Dataset**: [BDD100K](https://www.vis.xyz/bdd100k/), widely used for autonomous driving research, contains images captured from diverse driving scenarios.
 - **Classes**: The model segments the following seven classes: `['background', 'road', 'traffic light', 'traffic sign', 'person', 'vehicle', 'bicycle']`.
 - **Experiment Tracking**: Use [Weights & Biases (W&B)](https://wandb.ai/site/) to track and analyze experiments, providing insights into model performance and training efficiency.
+- **Optimized with W&B Sweeps**: Hyperparameter tuning for better mIoU.
 
 ## Technologies Used
 
-- **Python**: For scripting and model development.
-- **PyTorch**: For building and training the deep learning model.
-- **Fastai**: A high-level library built on PyTorch that simplifies model development and training.
-- **Weights & Biases**: For experiment tracking, logging metrics, and analyzing results.
-
+- **Python 3.8+**: For scripting and overall model development.
+- **PyTorch**: For building, training, and evaluating the deep learning model.
+- **Fastai**: High-level wrapper around PyTorch that simplifies data loading, augmentation, and training processes.
+- **Weights & Biases**: For tracking experiments, logging metrics, and visualizing performance analysis.
 ---
 
 ## Getting Started
