@@ -237,6 +237,7 @@ The following visualizations present the evaluation results, including charts, c
 </div>
 
 
-
+## Contact Information
+For inquiries, suggestions, or feedback, please feel free to reach out via email at [your.email@example.com](amribrahim.amer@gmail.com). Your input is greatly appreciated, and I amm eager to hear your thoughts on this project!
 
 
