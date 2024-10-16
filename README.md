@@ -231,6 +231,7 @@ You can also run the project locally by following these steps:
 - **Detailed Report**: For a more detailed analysis of the evaluation results, refer to the project report available in this repository ([project-report.pdf](project-report.pdf)) or view the interactive report on W&B [here](https://api.wandb.ai/links/amribrahim-amer-2024/5xdtb8eg).
 
 Below are the results visualized, including charts, confusion matrices, and other relevant data from the evaluation:
+
 <img src="https://github.com/amramer/Semantic-Segmentation-Model-for-Autonomous-Vehicles-An-End-to-End-ML-Workflow/blob/main/media/W&B_Workspace_panels.gif" alt="GIF" width="700" height="640">
 
 
