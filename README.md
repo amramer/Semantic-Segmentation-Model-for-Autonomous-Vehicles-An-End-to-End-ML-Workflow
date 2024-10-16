@@ -1,5 +1,9 @@
 # Semantic Segmentation Model for Autonomous Vehicles - An End-to-End ML Workflow
 
+![Python Version](https://img.shields.io/badge/python-3.8%2B-blue)
+![License](https://img.shields.io/badge/license-MIT-green)
+![WandB](https://img.shields.io/badge/Weights%20and%20Biases-Track%20Experiments-orange)
+
 <img src="https://github.com/amramer/Semantic-Segmentation-Model-for-Autonomous-Vehicles-An-End-to-End-ML-Workflow/blob/main/media/predictions.jpg" alt="JPG" width="840" height="924">
 
 <img src="https://github.com/amramer/Semantic-Segmentation-Model-for-Autonomous-Vehicles-An-End-to-End-ML-Workflow/blob/main/media/final_segmentation.gif" alt="GIF" width="800" height="620">
@@ -13,6 +17,22 @@ This project focuses on instance segmentation using the BDD100K dataset, a large
 - **Vehicle**
 - **Bicycle**
 - **Background**
+
+## Table of Contents
+- [Project Overview](#semantic-segmentation-model-for-autonomous-vehicles---an-end-to-end-ml-workflow)
+- [Want to know more?](#want-to-know-more?)
+- [Key Features](#key-features)
+- [Technologies Used](#technologies-used)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Running the Colab Notebook](#running-the-colab-notebook)
+  - [Dataset Preparation](#dataset-preparation)
+  - [Running Locally](#running-locally)
+- [Hyperparameter Optimization](#hyperparameter-optimization)
+- [Evaluation and Analysis](#evaluation-and-analysis)
+- [License](#license)
+- [Future Work](#future-work)
+- [Contact Information](#contact-information)
 
 ## Want to know more?
 
@@ -236,6 +256,17 @@ The following visualizations present the evaluation results, including charts, c
     <img src="https://github.com/amramer/Semantic-Segmentation-Model-for-Autonomous-Vehicles-An-End-to-End-ML-Workflow/blob/main/media/W&B_Workspace_panels.gif" alt="GIF" width="700" height="640">
 </div>
 
+## License
+This project is licensed under the MIT License. For more details, please refer to the [LICENSE](LICENSE) file included in the repository.
+
+## Future Work
+To enhance the capabilities and performance of this project, the following improvements are planned:
+
+- **Additional Classes for Segmentation**: Implementing more classes to segment a wider range of objects, improving the versatility of the model.
+- **Advanced Model Architectures**: Exploring and integrating advanced architectures to boost accuracy and efficiency in segmentation tasks.
+- **Increased Dataset Diversity**: Expanding the dataset to include more varied scenes and object types, which will help improve the model’s generalization to real-world scenarios.
+
+We welcome contributions and ideas to help achieve these goals!
 
 ## Contact Information
 For inquiries, suggestions, or feedback, please feel free to reach out via email at [amribrahim.amer@gmail.com](amribrahim.amer@gmail.com). Your input is greatly appreciated, and I am eager to hear your thoughts on this project!
