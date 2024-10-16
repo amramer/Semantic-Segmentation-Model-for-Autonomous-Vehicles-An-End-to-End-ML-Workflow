@@ -19,7 +19,7 @@ This project focuses on instance segmentation using the BDD100K dataset, a large
 If you'd like to learn more about the project and the results, feel free to read the detailed project report:
 
 - [Read the report on Weights & Biases](https://api.wandb.ai/links/amribrahim-amer-2024/5xdtb8eg)
-- Alternatively, check the report PDF file included in this repository.
+- Alternatively, check the [report PDF file](project-report.pdf) included in this repository.
 
 ## Key Features
 
