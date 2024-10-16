@@ -209,9 +209,31 @@ You can also run the project locally by following these steps:
    ```
 
         
-## Evaluation
+## Evaluation and Analysis
 
  Once the model is trained with the optimized hyperparameters, it is important to evaluate its performance on the test dataset. This allows us to assess how well the model generalizes to unseen data and compare the performance across different metrics such mean Intersection over Union (mIoU), and class-specific IoU scores.
+
+### 1. Evaluation Options:
+ You can evaluate the model in two ways:
+
+- **Colab Notebook**: You can run the model evaluation directly from the Colab notebook. Refer to the `Model Evaluation and Analysis` section in the notebook [here](Segmentation_Model_Autonomous_Vehicle.ipynb).
+  
+- **Local Evaluation**: If you have already set up the conda environment (`segmentation-env`), use the following command in your terminal to evaluate the model locally and log metrics to Weights & Biases (W&B):
+
+    ```bash
+    python evaluation.py
+    ```
+
+### 2. Expected Output:
+
+- **Metrics**: The model evaluation logs key metrics such as mIoU and class-specific IoU for classes like road, traffic light, vehicle, etc.
+- **Confusion Matrix & Histograms**: The evaluation also logs confusion matrices, histograms for class distributions, and tables of pixel counts.
+- **Detailed Report**: For a more detailed analysis of the evaluation results, refer to the project report available in this repository ([project-report.pdf](project-report.pdf)) or view the interactive report on W&B [here](https://api.wandb.ai/links/amribrahim-amer-2024/5xdtb8eg).
+
+Below are the results visualized, including charts, confusion matrices, and other relevant data from the evaluation:
+
+<img src="https://github.com/amramer/Semantic-Segmentation-Model-for-Autonomous-Vehicles-An-End-to-End-ML-Workflow/blob/main/media/W&B_Workspace_panels.gif" alt="GIF" width="430" height="640">
+
 
 
 
