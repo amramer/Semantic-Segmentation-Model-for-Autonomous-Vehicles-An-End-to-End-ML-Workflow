@@ -232,7 +232,7 @@ You can also run the project locally by following these steps:
 
 Below are the results visualized, including charts, confusion matrices, and other relevant data from the evaluation:
 
-<img src="https://github.com/amramer/Semantic-Segmentation-Model-for-Autonomous-Vehicles-An-End-to-End-ML-Workflow/blob/main/media/W&B_Workspace_panels.gif" alt="GIF" width="430" height="640">
+<img src="https://github.com/amramer/Semantic-Segmentation-Model-for-Autonomous-Vehicles-An-End-to-End-ML-Workflow/blob/main/media/W&B_Workspace_panels.gif" alt="GIF" width="800" height="640">
 
 
 
