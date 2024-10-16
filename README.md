@@ -213,7 +213,9 @@ You can also run the project locally by following these steps:
         ```
 
         
-         
+ ## Evaluation
+
+ Once the model is trained with the optimized hyperparameters, it is important to evaluate its performance on the test dataset. This allows us to assess how well the model generalizes to unseen data and compare the performance across different metrics such mean Intersection over Union (mIoU), and class-specific IoU scores.
 
 
 
