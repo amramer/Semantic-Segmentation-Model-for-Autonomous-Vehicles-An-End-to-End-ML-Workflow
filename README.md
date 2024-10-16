@@ -204,6 +204,15 @@ You can also run the project locally by following these steps:
          <img src="https://github.com/amramer/Semantic-Segmentation-Model-for-Autonomous-Vehicles-An-End-to-End-ML-Workflow/blob/main/media/sweep-runs.png" 
            alt="PNG" width="1430" height="545">
 
+     4. **Final Step: Train the Model with Optimal Hyperparameters**:
+
+        Once the W&B Sweep has identified the best-performing hyperparameters, you can manually set these parameters to train your model with them. Here's an         example command to run the model training using these optimal hyperparameters:
+
+        ```bash
+        python train.py --img_size 320 --batch_size 8 --epochs 50 --lr 0.0004 --arch resnet18 --log_preds True
+        ```
+
+        
          
 
 
