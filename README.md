@@ -230,7 +230,7 @@ You can also run the project locally by following these steps:
 - **Confusion Matrix & Histograms**: The evaluation also logs confusion matrices, histograms for class distributions, and tables of pixel counts.
 - **Detailed Report**: For a more detailed analysis of the evaluation results, refer to the project report available in this repository ([project-report.pdf](project-report.pdf)) or view the interactive report on W&B [here](https://api.wandb.ai/links/amribrahim-amer-2024/5xdtb8eg).
 
-Below are the results visualized, including charts, confusion matrices, and other relevant data from the evaluation:
+The following visualizations present the evaluation results, including charts, confusion matrices, and other relevant metrics:
 
 <div align="center">
     <img src="https://github.com/amramer/Semantic-Segmentation-Model-for-Autonomous-Vehicles-An-End-to-End-ML-Workflow/blob/main/media/W&B_Workspace_panels.gif" alt="GIF" width="700" height="640">
